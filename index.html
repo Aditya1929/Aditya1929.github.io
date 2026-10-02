@@ -13,6 +13,9 @@
       .when { padding:8px 16px; width:22%; vertical-align:top; color:#666; font-size:14px; }
       .what { padding:8px; width:78%; vertical-align:top; }
       .what p { margin:4px 0 0 0; }
+      .what ul { margin:6px 0 0 0; padding-left:18px; }
+      .what li { margin-bottom:4px; }
+      .sub { color:#666; font-style:italic; }
     </style>
   </head>
 
@@ -29,13 +32,14 @@
                   Aditya Pericherla
                 </p>
                 <p>
-                  I'm an EECS undergraduate at <a href="https://eecs.berkeley.edu/">UC Berkeley</a>, working on robot learning, embodied AI, and ML systems.
-                  I do quadrotor control research in the Agile Robotics and Perception Lab (ARPL) with Prof. Loianno, and I've built simulation evaluation infrastructure for humanoid robots at <a href="https://apptronik.com/">Apptronik</a>.
+                  I'm an EECS undergraduate at <a href="https://eecs.berkeley.edu/">UC Berkeley</a> working on robot learning and embodied AI.
+                  I'm a robotics research intern in the Agile Robotics and Perception Lab at <a href="https://bair.berkeley.edu/">Berkeley AI Research (BAIR)</a>, where I work on JEPA-based visual pose estimation and model predictive control for quadrotors.
+                  This summer I was a deep learning engineer intern at <a href="https://apptronik.com/">Apptronik</a>, fine-tuning vision-language-action policies for the Apollo humanoid.
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:you@example.com">Email</a> &nbsp;/&nbsp;
-                  <a href="#">CV</a> &nbsp;/&nbsp;
-                  <a href="#">Scholar</a> &nbsp;/&nbsp;
+                  <a href="mailto:adityapericherla@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="tel:+15103553678">Phone</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/aditya-pericherla">LinkedIn</a> &nbsp;/&nbsp;
                   <a href="https://github.com/Aditya1929">GitHub</a>
                 </p>
               </td>
@@ -50,32 +54,27 @@
           <table class="section"><tbody>
             <tr><td colspan="2" style="padding:16px 16px 0 16px"><h2>Education</h2></td></tr>
             <tr>
-              <td class="when">Expected May 2029</td>
+              <td class="when">Aug 2025 &ndash; May 2028<br>Berkeley, CA</td>
               <td class="what">
                 <strong>University of California, Berkeley</strong>
-                <br>B.S. in Electrical Engineering and Computer Sciences
-                <p>Concentration in Intelligence and Human-Computer Interaction &middot; GPA 3.90</p>
+                <br>B.S. in Electrical Engineering and Computer Sciences (EECS) &middot; GPA 3.90
+                <p class="sub">Coursework: Machine Learning, Statistics and Probability, Linear Algebra, Optimization</p>
               </td>
             </tr>
           </tbody></table>
 
           <!-- ============ Publications ============ -->
-          <!-- Copy the <tr> below for each paper. Optional thumbnail goes in images/. -->
           <table class="section"><tbody>
             <tr><td colspan="2" style="padding:16px 16px 0 16px"><h2>Publications</h2></td></tr>
             <tr>
-              <td style="padding:16px;width:22%;vertical-align:middle">
-                <!-- <img src="images/paper1.jpg" width="100%"> -->
-              </td>
-              <td class="what" style="vertical-align:middle">
-                <a href="#"><span class="papertitle">Paper Title</span></a>
+              <td class="when">2024</td>
+              <td class="what">
+                <a href="https://jhss.scholasticahq.com/article/122214-a-custom-convolutional-neural-network-to-streamline-oral-disease-detection-and-screening"><span class="papertitle">A Custom Convolutional Neural Network to Streamline Oral Disease Detection and Screening</span></a>
                 <br>
-                <strong>Aditya Pericherla</strong>, Coauthor Name, Coauthor Name
+                <strong>Aditya Pericherla</strong>
                 <br>
-                <em>Venue</em>, Year
-                <br>
-                <a href="#">project page</a> / <a href="#">arXiv</a> / <a href="#">code</a>
-                <p>One or two sentences summarizing the paper.</p>
+                <em>Journal of High School Science (JHSS)</em>, 2024
+                <p>Streamlining oral disease detection with CNNs and transfer learning.</p>
               </td>
             </tr>
           </tbody></table>
@@ -83,46 +82,53 @@
           <!-- ============ Experience ============ -->
           <table class="section"><tbody>
             <tr><td colspan="2" style="padding:16px 16px 0 16px"><h2>Experience</h2></td></tr>
+
             <tr>
-              <td class="when">Jun 2026 &ndash; Present</td>
+              <td class="when">Jun 2026 &ndash; Aug 2026<br>Austin, TX</td>
               <td class="what">
-                <strong>Quantitative Research Intern</strong>, Stealth Startup (San Francisco)
-                <p>Attention-based news decomposition that attributes predicted price moves to specific article spans.</p>
+                <strong>Deep Learning Engineer Intern</strong>, <a href="https://apptronik.com/">Apptronik</a>
+                <ul>
+                  <li>Fine-tuned the NVIDIA GR00T vision-language-model backbone and flow-matching DiT action head for pick-and-place tasks on the Apollo 2 humanoid, reaching an 80% task success rate across 50 real-world rollouts and 10K training iterations.</li>
+                  <li>Built a containerized Kubernetes workflow orchestration framework with MuJoCo and Isaac Sim backends, cutting closed-loop vision-language-action (VLA) policy evaluations from 2 hours to 10 minutes (12x) via parallel rollout sharding.</li>
+                  <li>Designed an automated test matrix of 50 test cases across 4 system configurations, enabling regression testing across all tested VLA policies.</li>
+                  <li>Implemented an end-to-end evaluation pipeline with MinIO-compatible object storage, automating ingestion of 200+ MCAP episodes (1TB+ of telemetry).</li>
+                </ul>
               </td>
             </tr>
+
             <tr>
-              <td class="when">Dates</td>
+              <td class="when">Jul 2026 &ndash; Present<br>San Francisco, CA</td>
               <td class="what">
-                <strong>Intern</strong>, <a href="https://apptronik.com/">Apptronik</a>
-                <p>Building simulation evaluation infrastructure for humanoid robots.</p>
+                <strong>Quantitative Research Engineer</strong>, Stealth Startup
+                <ul>
+                  <li>Developed a span-attribution model over a ModernBERT base encoder to decompose 1K+ news articles into signal spans, optimizing for the information coefficient between predicted signals and future asset returns.</li>
+                  <li>Applied INT8 quantization and mixed-precision inference across model configurations via TensorRT/bitsandbytes, reducing memory 35% and p99 latency with less than 2% IC degradation.</li>
+                  <li>Profiled 3 hardware architectures (RTX 5070, Jetson Orin, FPGA) with Nsight Compute, analyzing latency and memory bandwidth tradeoffs for deployment.</li>
+                </ul>
               </td>
             </tr>
+
             <tr>
-              <td class="when">Dates</td>
+              <td class="when">Sep 2025 &ndash; Present<br>Berkeley, CA</td>
               <td class="what">
-                <strong>Research Assistant</strong>, Agile Robotics and Perception Lab (ARPL)
-                <p>Quadrotor control with Prof. Loianno: moving from MPPI to gradient-based MPC using a learned world model (Fly-JEPA).</p>
+                <strong>Robotics Research Intern</strong>, Agile Robotics and Perception Lab | UC Berkeley BAIR
+                <ul>
+                  <li>Developing an efficient visual pose estimation pipeline for quadrotors via JEPA latent-space prediction, achieving 40&ndash;50 ms policy inference on hardware (in collaboration with Yann LeCun's lab).</li>
+                  <li>Building a hierarchical training stack (TCN encoders, GRU predictor, and SIGReg loss) to drive model predictive path integral (MPPI) control at 100 Hz over ROS2 using RGBD and proprioception input.</li>
+                  <li>Built a custom simulator to evaluate TCN/RNN architectures on gradient-based (acados/L4CasADi) model predictive control of the quadrotor, identifying TCN as the strongest candidate due to gradient stability across long-horizon tasks.</li>
+                </ul>
               </td>
             </tr>
+
             <tr>
-              <td class="when">Dates</td>
+              <td class="when">Aug 2025 &ndash; May 2026<br>Berkeley, CA</td>
               <td class="what">
-                <strong>Machine Learning Engineer</strong>, Olera Health (Berkeley SkyDeck)
-                <p>Nutritional profiling models, multi-agent and Text-to-SQL systems for an AI-native medical platform.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="when">Dates</td>
-              <td class="what">
-                <strong>Avionics Engineer</strong>, Space Enterprise at Berkeley
-                <p>Firmware for SPI communication between a microcontroller and barometer; custom Altium PCB for thermocouple temperature sensing in flight.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="when">Dates</td>
-              <td class="what">
-                <strong>Research Apprentice</strong>, Quantitative Biosciences at Berkeley
-                <p>Fabricated and characterized carbon nanotube chips: synthesis, drop casting, electrode deposition, and surface functionalization.</p>
+                <strong>Machine Learning Engineer</strong>, Olera Health | SkyDeck Pad-13
+                <ul>
+                  <li>Created an ML-driven nutrition profiling system serving health products (50+ product catalog) to 300+ users, improving Precision@K by 18&ndash;20%.</li>
+                  <li>Developed a multi-agent Text-to-SQL system over an 80+ table Postgres schema with schema linking and execution-guided decoding, reaching 89% accuracy on a 500-query evaluation set.</li>
+                  <li>Performed exploratory data analysis (PCA, t-SNE, k-means) on 200 records &times; 30 features, identifying 8 behavioral clusters used to understand user categorization.</li>
+                </ul>
               </td>
             </tr>
           </tbody></table>
@@ -131,33 +137,78 @@
           <table class="section"><tbody>
             <tr><td colspan="2" style="padding:16px 16px 0 16px"><h2>Selected Projects</h2></td></tr>
             <tr>
-              <td style="padding:16px;width:22%;vertical-align:middle">
-                <!-- <img src="images/cross_embodiment.jpg" width="100%"> -->
-              </td>
-              <td class="what" style="vertical-align:middle">
-                <span class="papertitle">Cross-Embodiment Manipulation Policy</span>
-                <p>A shared policy trunk with per-embodiment action heads, trained across a Franka arm and an SO-ARM101 in Isaac Sim.</p>
-                <a href="#">code</a>
+              <td class="when"></td>
+              <td class="what">
+                <a href="https://github.com/Aditya1929/Neuroscience"><span class="papertitle">Neuro-Interpretability</span></a>
+                <p>Extracted emotion steering vectors from Pythia 14M&ndash;2.8B via contrastive means, tracking semantic, geometric, and causal-steering validity and finding non-monotonic emergence at 410M.</p>
               </td>
             </tr>
             <tr>
-              <td style="padding:16px;width:22%;vertical-align:middle">
-                <!-- <img src="images/hil_serl.jpg" width="100%"> -->
+              <td class="when"></td>
+              <td class="what">
+                <a href="https://drive.google.com/file/d/1ED-IqgX1-o4Nt2m9IS85KEHT9MfTaP8_/view?usp=sharing"><span class="papertitle">LeRobot SO-ARM101</span></a>
+                <p>Imitation learning and online reinforcement learning on real hardware via LeRobot.</p>
               </td>
-              <td class="what" style="vertical-align:middle">
-                <span class="papertitle">HIL-SERL on a Low-Cost Arm</span>
-                <p>Human-in-the-loop RL and imitation learning on an SO-ARM101 in a home robot lab.</p>
-                <a href="#">code</a>
+            </tr>
+            <tr>
+              <td class="when"></td>
+              <td class="what">
+                <a href="https://github.com/Aditya1929/Medical-GraphRAG"><span class="papertitle">GraphReason</span></a>
+                <p>Multi-document RAG over 20+ PDFs with a Neo4j knowledge graph.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="when"></td>
+              <td class="what">
+                <a href="https://github.com/Aditya1929/train-vit"><span class="papertitle">Trained ViT</span></a>
+                <p>Vision Transformer trained on CIFAR-100 with bf16, a cosine learning-rate schedule, and RandAugment.</p>
               </td>
             </tr>
           </tbody></table>
 
           <!-- ============ Awards ============ -->
           <table class="section"><tbody>
-            <tr><td colspan="2" style="padding:16px 16px 0 16px"><h2>Awards</h2></td></tr>
+            <tr><td colspan="2" style="padding:16px 16px 0 16px"><h2>Notable Achievements</h2></td></tr>
             <tr>
-              <td class="when">Year</td>
-              <td class="what"><strong>Award Name</strong>, Awarding Organization</td>
+              <td class="when">2025</td>
+              <td class="what"><strong>1st Place, CalHacks</strong> (<a href="https://devpost.com/software/movement-f4nyob">Sui Blockchain Track</a>) &mdash; the largest college hackathon in the world, with 2,000+ hackers</td>
+            </tr>
+            <tr>
+              <td class="when">2024</td>
+              <td class="what"><strong>Published Research</strong> (<a href="https://jhss.scholasticahq.com/article/122214-a-custom-convolutional-neural-network-to-streamline-oral-disease-detection-and-screening">JHSS</a>) &mdash; streamlining oral disease detection with CNNs and transfer learning</td>
+            </tr>
+            <tr>
+              <td class="when">2024</td>
+              <td class="what"><strong>SIN Physics Exam</strong> &mdash; Distinction, awarded to the top 10% of candidates (200 of 2,000 participants)</td>
+            </tr>
+            <tr>
+              <td class="when">2024</td>
+              <td class="what"><strong>Gold, Infinity Mathematics Olympiad</strong> &mdash; among 1,000+ attendees from 7 countries</td>
+            </tr>
+            <tr>
+              <td class="when">2023</td>
+              <td class="what"><strong>Uber Virtual Global Hackathon &mdash; Asia-Pacific Winners</strong> &mdash; redesigned the app for user and driver accessibility</td>
+            </tr>
+          </tbody></table>
+
+          <!-- ============ Skills ============ -->
+          <table class="section"><tbody>
+            <tr><td colspan="2" style="padding:16px 16px 0 16px"><h2>Skills</h2></td></tr>
+            <tr>
+              <td class="when">Languages</td>
+              <td class="what">Python, Java, SQL, C++, CUDA</td>
+            </tr>
+            <tr>
+              <td class="when">AI / ML</td>
+              <td class="what">PyTorch, TensorFlow, HuggingFace Transformers, scikit-learn, LangChain, Pandas, NumPy/SciPy</td>
+            </tr>
+            <tr>
+              <td class="when">Robotics</td>
+              <td class="what">Isaac Sim, MuJoCo, ROS2, acados/L4CasADi, MCAP</td>
+            </tr>
+            <tr>
+              <td class="when">Infrastructure</td>
+              <td class="what">PostgreSQL, MongoDB, Pinecone, Redis, AWS (EC2, S3), Docker, Kubernetes, Airflow, MinIO</td>
             </tr>
           </tbody></table>
 
