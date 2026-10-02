@@ -8,6 +8,12 @@
     <meta name="author" content="Aditya Pericherla">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+      .section { width:100%; border:0px; border-spacing:0px 10px; border-collapse:separate; margin-right:auto; margin-left:auto; }
+      .when { padding:8px 16px; width:22%; vertical-align:top; color:#666; font-size:14px; }
+      .what { padding:8px; width:78%; vertical-align:top; }
+      .what p { margin:4px 0 0 0; }
+    </style>
   </head>
 
   <body>
@@ -15,7 +21,7 @@
       <tr style="padding:0px">
         <td style="padding:0px">
 
-          <!-- Header: name, bio, links, photo -->
+          <!-- ============ Header ============ -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
@@ -23,7 +29,8 @@
                   Aditya Pericherla
                 </p>
                 <p>
-                  Write a short bio here: where you study, what you work on, and who you work with.
+                  I'm an EECS undergraduate at <a href="https://eecs.berkeley.edu/">UC Berkeley</a>, working on robot learning, embodied AI, and ML systems.
+                  I do quadrotor control research in the Agile Robotics and Perception Lab (ARPL) with Prof. Loianno, and I've built simulation evaluation infrastructure for humanoid robots at <a href="https://apptronik.com/">Apptronik</a>.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:you@example.com">Email</a> &nbsp;/&nbsp;
@@ -39,39 +46,122 @@
             </tr>
           </tbody></table>
 
-          <!-- Research intro -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <!-- ============ Education ============ -->
+          <table class="section"><tbody>
+            <tr><td colspan="2" style="padding:16px 16px 0 16px"><h2>Education</h2></td></tr>
             <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  Describe your research interests here.
-                </p>
+              <td class="when">Expected May 2029</td>
+              <td class="what">
+                <strong>University of California, Berkeley</strong>
+                <br>B.S. in Electrical Engineering and Computer Sciences
+                <p>Concentration in Intelligence and Human-Computer Interaction &middot; GPA 3.90</p>
               </td>
             </tr>
           </tbody></table>
 
-          <!-- Projects / publications. Copy this row for each entry. -->
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <!-- ============ Publications ============ -->
+          <!-- Copy the <tr> below for each paper. Optional thumbnail goes in images/. -->
+          <table class="section"><tbody>
+            <tr><td colspan="2" style="padding:16px 16px 0 16px"><h2>Publications</h2></td></tr>
             <tr>
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <!-- <img src="images/project1.jpg" width="100%"> -->
+              <td style="padding:16px;width:22%;vertical-align:middle">
+                <!-- <img src="images/paper1.jpg" width="100%"> -->
               </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="#"><span class="papertitle">Project or Paper Title</span></a>
+              <td class="what" style="vertical-align:middle">
+                <a href="#"><span class="papertitle">Paper Title</span></a>
                 <br>
-                <strong>Aditya</strong>, Collaborator Name
+                <strong>Aditya Pericherla</strong>, Coauthor Name, Coauthor Name
                 <br>
                 <em>Venue</em>, Year
                 <br>
-                <a href="#">project page</a> / <a href="#">paper</a> / <a href="#">code</a>
-                <p></p>
-                <p>One or two sentences summarizing the work.</p>
+                <a href="#">project page</a> / <a href="#">arXiv</a> / <a href="#">code</a>
+                <p>One or two sentences summarizing the paper.</p>
               </td>
             </tr>
           </tbody></table>
 
-          <!-- Footer -->
+          <!-- ============ Experience ============ -->
+          <table class="section"><tbody>
+            <tr><td colspan="2" style="padding:16px 16px 0 16px"><h2>Experience</h2></td></tr>
+            <tr>
+              <td class="when">Jun 2026 &ndash; Present</td>
+              <td class="what">
+                <strong>Quantitative Research Intern</strong>, Stealth Startup (San Francisco)
+                <p>Attention-based news decomposition that attributes predicted price moves to specific article spans.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="when">Dates</td>
+              <td class="what">
+                <strong>Intern</strong>, <a href="https://apptronik.com/">Apptronik</a>
+                <p>Building simulation evaluation infrastructure for humanoid robots.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="when">Dates</td>
+              <td class="what">
+                <strong>Research Assistant</strong>, Agile Robotics and Perception Lab (ARPL)
+                <p>Quadrotor control with Prof. Loianno: moving from MPPI to gradient-based MPC using a learned world model (Fly-JEPA).</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="when">Dates</td>
+              <td class="what">
+                <strong>Machine Learning Engineer</strong>, Olera Health (Berkeley SkyDeck)
+                <p>Nutritional profiling models, multi-agent and Text-to-SQL systems for an AI-native medical platform.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="when">Dates</td>
+              <td class="what">
+                <strong>Avionics Engineer</strong>, Space Enterprise at Berkeley
+                <p>Firmware for SPI communication between a microcontroller and barometer; custom Altium PCB for thermocouple temperature sensing in flight.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="when">Dates</td>
+              <td class="what">
+                <strong>Research Apprentice</strong>, Quantitative Biosciences at Berkeley
+                <p>Fabricated and characterized carbon nanotube chips: synthesis, drop casting, electrode deposition, and surface functionalization.</p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ============ Selected Projects ============ -->
+          <table class="section"><tbody>
+            <tr><td colspan="2" style="padding:16px 16px 0 16px"><h2>Selected Projects</h2></td></tr>
+            <tr>
+              <td style="padding:16px;width:22%;vertical-align:middle">
+                <!-- <img src="images/cross_embodiment.jpg" width="100%"> -->
+              </td>
+              <td class="what" style="vertical-align:middle">
+                <span class="papertitle">Cross-Embodiment Manipulation Policy</span>
+                <p>A shared policy trunk with per-embodiment action heads, trained across a Franka arm and an SO-ARM101 in Isaac Sim.</p>
+                <a href="#">code</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:16px;width:22%;vertical-align:middle">
+                <!-- <img src="images/hil_serl.jpg" width="100%"> -->
+              </td>
+              <td class="what" style="vertical-align:middle">
+                <span class="papertitle">HIL-SERL on a Low-Cost Arm</span>
+                <p>Human-in-the-loop RL and imitation learning on an SO-ARM101 in a home robot lab.</p>
+                <a href="#">code</a>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ============ Awards ============ -->
+          <table class="section"><tbody>
+            <tr><td colspan="2" style="padding:16px 16px 0 16px"><h2>Awards</h2></td></tr>
+            <tr>
+              <td class="when">Year</td>
+              <td class="what"><strong>Award Name</strong>, Awarding Organization</td>
+            </tr>
+          </tbody></table>
+
+          <!-- ============ Footer ============ -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">
